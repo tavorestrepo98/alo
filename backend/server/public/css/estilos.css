@@ -1,0 +1,67 @@
+.fondo{
+	background-image: url("../img/calculadora.jpeg");
+	background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+.fondoreg{
+	background-image: url("../img/registro.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+.fondoper{
+	background-image: url("../img/perfil.jpeg");
+	background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+	background-position: all;
+}
+.fondocu{
+	background-image: url("../img/cuenta.jpeg");
+	background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+	background-position: all;
+}
+.fondoliscu{
+	background-image: url("../img/lista.jpeg");
+	background-attachment: fixed;
+	height: 100vh;
+	background-size: cover;
+	background-position: all;
+}
+.foto{
+	background: rgba(0,0,0,0);
+	border: 0;
+}
+.bordes{
+	border: 1px  solid;
+}
+.login{
+	background: rgba(0,0,0,0.7);
+}
+.form{
+	background-attachment: fixed;
+}
+.imgc{
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: all;
+}
+#fotoperfil{
+	height: 250px;
+	width: 250px;
+	border-radius: 100%;
+	border: 1px white solid;
+}
+#fotoperfil2{
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	border: 1px white solid;
+}
+ul{
+	list-style: none;
+}

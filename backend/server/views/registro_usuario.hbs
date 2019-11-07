@@ -1,0 +1,51 @@
+
+{{> head}}
+<body class="fondoreg">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 offset-md-3 col-xl-4 offset-xl-8 login my-md-5 my-lg-0">
+                        <form action="/user/signup" method="POST" class="form text-white py-5">
+                            <div class="form-group d-flex justify-content-center">
+                                <img src="img/logo.png">
+                            </div>
+                            <h1 class="display-4">Registro</h1>
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="nacimiento">Fecha de nacimiento</label>
+                                <input type="month" class="form-control" id="nacimiento" name="fecha">
+                            </div>
+                            <div class="form-group">
+                                <label for="correoElectronico">Correo electronico</label>
+                                <input type="email" class="form-control" id="correoElectronico" placeholder="nombre@dominio.com" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="nombreUsuario">Nombre de usuario</label>
+                                <input type="text" class="form-control" id="nombreUsuario" name="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input type="text" class="form-control" id="password" name="password">
+                            </div>
+                            {{!-- <div class="form-group">
+                                <label for="fotoperfil">Foto del perfil</label>
+                                <input type="file" class="form-control foto" id="fotoperfil">
+                            </div> --}}
+                            <button type="submit" class="btn btn-primary btn-block ">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{> footer}}

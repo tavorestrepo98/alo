@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="https://kit.fontawesome.com/3c28765122.js" crossorigin="anonymous"></script>
+	<title>CUENTA DE nombre</title>
+</head>
+<body class="animated fadeIn">
+	<nav class="navbar fixed-top navbar-inverse bg-inverse navbar-toggleable-sm">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="home.html">
+			<img src="img/logo.png" height="40" class="d-inline-block align-top" alt="">
+		</a>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<ul class="navbar-nav mr-auto text-center">
+				<li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	<i class="fas fa-user"></i> Perfil
+		        	</a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="perfil.html">Ver Perfil</a>
+			            <a class="dropdown-item text-danger" href="login.html"><i class="fas fa-power-off"></i> Cerrar Sesión</a>
+			        </div>
+			    </li>
+		     	<li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	<i class="fas fa-money-check"></i> Cuenta
+		        	</a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="registrarCuenta.html">Registrar Cuenta</a>
+			            <a class="dropdown-item" href="#">Listar Cuentas</a>
+			        </div>
+			    </li>
+			    <li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	<i class="fas fa-piggy-bank"></i> Presupuesto
+		        	</a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="#">Crear Presupuesto</a>
+			            <a class="dropdown-item" href="#">Listar Presupuestos</a>
+			        </div>
+			    </li>
+			    <li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	<i class="fas fa-exchange-alt"></i> Transacción
+		        	</a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="#">Generar Transacción</a>
+			            <a class="dropdown-item" href="#">Listar Transacciones</a>
+			        </div>
+			    </li>
+		    </ul>
+		</div>
+	</nav>
+	<!-- d-flex: nos sirve para convertir un conteneedor en flexbox. -->
+	<div class="container-fluid fondoliscu d-flex  align-items-center justify-content-center">
+		<div class="row">
+			<div class="col-12">
+				<div id="accordion">
+				  	<div class="card">
+				    	<div class="card-header d-flex justify-content-center" id="headingOne">
+					      	<h5 class="mb-0">
+				        	<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          	<img src="img/ejemplo.jpeg" id="fotoperfil2" alt="avatar">
+	    						<div>
+	    							<h4 class="card-title font-weight-bold mb-2">Cuenta #1</h4>
+	    						</div>
+				        	</button>
+					      	</h5>
+				    	</div>
+				    	<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					    	<div class="container">
+					    		<div class="row">
+					    			<div class="col-6">
+				    					<img class="card-img-top rounded-0 imgc" height="350" src="img/c1.jpeg" alt="Card image cap">
+					    			</div>
+					    			<div class="col-6">
+					    				<div class="d-flex flex-row">
+					    					<p class="h5">Saldo:</p>
+					    					<p class="h5" id="saldo"></p>
+					    				</div>
+					    				<p class="h5">Descripción</p>
+					    				<p id="descripcion"></p>
+					    				<div class="d-flex flex-row">
+					    					<p class="h5">Tipo de cuenta:</p>
+					    					<p class="h5" id="saldo"></p>
+					    				</div>
+					    				<div class="d-flex flex-row">
+					    					<p class="h5">Banco:</p>
+					    					<p class="h5" id="saldo"></p>
+					    				</div>
+					    				<div class="d-flex flex-row">
+					    					<p class="h5">Moneda:</p>
+					    					<p class="h5" id="saldo"></p>
+					    				</div>
+					    			</div>
+					    		</div>
+					    	</div>
+				    	</div>
+				  	</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="
+	https://cdnjs.cloudflare.com/ajax/libs/graingert-wow/1.2.2/wow.min.js"></script>
+</body>
+</html>
